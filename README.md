@@ -7,6 +7,10 @@ python3 -m ensurepip --upgrade
 npm install
 npm view
 
+Netlify:
+Add new site -> import -> github -> drones_sa
+Functions -> environment variables -> add a variable OPENAI_API_KEY
+
 
 Tuning OpenAI:
 openai tools fine_tunes.prepare_data -f "drones SA".csv
