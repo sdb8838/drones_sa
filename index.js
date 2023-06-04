@@ -26,8 +26,8 @@ document.addEventListener('submit', (e) => {
 }) 
 
 async function fetchReply(){
-    //const url = 'https://master--creative-queijadas-66d3a8.netlify.app/.netlify/functions/fetchAI'
-    const url = '.netlify/functions/fetchAI'
+    const url = 'https://master--serene-scone-33b6a4.netlify.app/.netlify/functions/fetchAI'
+    //const url = '.netlify/functions/fetchAI'
    
     const response = await fetch (url, {
         method: 'POST',
