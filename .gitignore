@@ -1,0 +1,5 @@
+# Local Netlify folder
+.netlify
+train data
+node_modules
+package-lock.json
