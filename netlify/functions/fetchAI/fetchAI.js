@@ -15,7 +15,7 @@ const handler = async (event) => {
         frequency_penalty: 0.3,
         max_tokens: 100,
         temperature: 0,
-        stop: [' END', '->']
+        stop: [' \n', '->']
     })
 
     return {
