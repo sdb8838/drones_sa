@@ -1,15 +1,16 @@
 Quick start:
 Docs iniciales: netlify images, .gitignore, index.ss/js/html README y vite.config.js
-
-Subir a Github
+Instalar GIT (https://git-scm.com/download/win)
+Instalar node (https://nodejs.org/es/download)
 
 python3 -m ensurepip --upgrade
 npm install
-npm view
+npm start
 
 Netlify:
 Add new site -> import -> github -> drones_sa
 Functions -> environment variables -> add a variable OPENAI_API_KEY
+URL: https://serene-scone-33b6a4.netlify.app/
 
 
 Tuning OpenAI:
@@ -22,3 +23,6 @@ Cursos de Scrimba:
 - Todos: https://scrimba.com/allcourses
 - The Frontend Career Path: https://scrimba.com/learn/frontend
 - Become a Scrimba Pro member: https://scrimba.com/pricing
+04-06-48-04
+04-08-44-37
+davinci:ft-personal-2023-06-04-14-49-41
