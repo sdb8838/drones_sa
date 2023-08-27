@@ -9,7 +9,7 @@ const openai = new OpenAIApi(configuration)
 const handler = async (event) => {
   try {
     const response = await openai.createCompletion({
-        model: 'davinci:ft-personal-2023-07-02-16-51-26',
+        model: 'ft:gpt-3.5-turbo-0613:personal::7s8u5jhx',
         prompt: event.body,
         presence_penalty: 0,
         frequency_penalty: 0.3,
