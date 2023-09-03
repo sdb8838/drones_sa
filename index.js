@@ -28,7 +28,7 @@ document.addEventListener('submit', (e) => {
 async function fetchReply(){
     //const url = 'https://serene-scone-33b6a4.netlify.app/.netlify/functions/fetchAI'
     const url = '.netlify/functions/fetchAI'
-   
+    console.log(conversationStr)
     const response = await fetch (url, {
         method: 'POST',
         headers: {
