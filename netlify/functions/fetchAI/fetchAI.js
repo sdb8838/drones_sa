@@ -9,8 +9,8 @@ const openai = new OpenAIApi(configuration)
 const handler = async (event) => {
   try {
     console.log("1")
+    console.log(event.body)
     const response = await openai.createCompletion({
-        console.log(event.body)
         model: 'ft:gpt-3.5-turbo-0613:personal::7s8u5jhx',
         prompt: event.body,
         presence_penalty: 0,
