@@ -8,7 +8,9 @@ const openai = new OpenAIApi(configuration)
 
 const handler = async (event) => {
   try {
+    console.log("1")
     const response = await openai.createCompletion({
+        console.log(event.body)
         model: 'ft:gpt-3.5-turbo-0613:personal::7s8u5jhx',
         prompt: event.body,
         presence_penalty: 0,
@@ -17,6 +19,8 @@ const handler = async (event) => {
         temperature: 0,
         stop: [' \n', '->']
     })
+    console.log("2")
+    console.log(response.data)
 
     return {
       statusCode: 200,
@@ -30,6 +34,7 @@ const handler = async (event) => {
       ),
     }
   } catch (error) {
+    console.log("3")
     return { statusCode: 500, body: error.toString() }
   }
 }
